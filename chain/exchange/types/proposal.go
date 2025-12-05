@@ -8,8 +8,8 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 
-	oracletypes "github.com/InjectiveLabs/sdk-go/chain/oracle/types"
-	chaintypes "github.com/InjectiveLabs/sdk-go/chain/types"
+	oracletypes "github.com/biya-coin/sdk-go/chain/oracle/types"
+	chaintypes "github.com/biya-coin/sdk-go/chain/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	gov "github.com/cosmos/cosmos-sdk/x/gov/types"
 )

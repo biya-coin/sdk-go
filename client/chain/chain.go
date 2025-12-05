@@ -42,13 +42,13 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	exchangetypes "github.com/InjectiveLabs/sdk-go/chain/exchange/types"
-	permissionstypes "github.com/InjectiveLabs/sdk-go/chain/permissions/types"
-	chainstreamtypes "github.com/InjectiveLabs/sdk-go/chain/stream/types"
-	tokenfactorytypes "github.com/InjectiveLabs/sdk-go/chain/tokenfactory/types"
-	txfeestypes "github.com/InjectiveLabs/sdk-go/chain/txfees/types"
-	"github.com/InjectiveLabs/sdk-go/client"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	exchangetypes "github.com/biya-coin/sdk-go/chain/exchange/types"
+	permissionstypes "github.com/biya-coin/sdk-go/chain/permissions/types"
+	chainstreamtypes "github.com/biya-coin/sdk-go/chain/stream/types"
+	tokenfactorytypes "github.com/biya-coin/sdk-go/chain/tokenfactory/types"
+	txfeestypes "github.com/biya-coin/sdk-go/chain/txfees/types"
+	"github.com/biya-coin/sdk-go/client"
+	"github.com/biya-coin/sdk-go/client/common"
 )
 
 type OrderbookType string

@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/InjectiveLabs/sdk-go/client/common"
-	exchangeclient "github.com/InjectiveLabs/sdk-go/client/exchange"
+	"github.com/biya-coin/sdk-go/client/common"
+	exchangeclient "github.com/biya-coin/sdk-go/client/exchange"
 )
 
 func main() {

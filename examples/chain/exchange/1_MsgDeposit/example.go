@@ -12,9 +12,9 @@ import (
 	sdktypes "github.com/cosmos/cosmos-sdk/types"
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 
-	exchangev2types "github.com/InjectiveLabs/sdk-go/chain/exchange/types/v2"
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	exchangev2types "github.com/biya-coin/sdk-go/chain/exchange/types/v2"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
+	"github.com/biya-coin/sdk-go/client/common"
 )
 
 func main() {

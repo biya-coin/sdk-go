@@ -11,8 +11,8 @@ import (
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 	authztypes "github.com/cosmos/cosmos-sdk/x/authz"
 
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
+	"github.com/biya-coin/sdk-go/client/common"
 )
 
 func main() {

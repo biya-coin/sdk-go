@@ -1,7 +1,7 @@
 package main
 
 import (
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
 )
 
 func main() {

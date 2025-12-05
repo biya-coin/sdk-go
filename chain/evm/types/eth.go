@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 
 	errorsmod "cosmossdk.io/errors"
-	"github.com/InjectiveLabs/sdk-go/chain/types"
+	"github.com/biya-coin/sdk-go/chain/types"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 )

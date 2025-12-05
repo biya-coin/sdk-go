@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/InjectiveLabs/sdk-go/chain/exchange/types"
-	v1 "github.com/InjectiveLabs/sdk-go/chain/exchange/types"
+	"github.com/biya-coin/sdk-go/chain/exchange/types"
+	v1 "github.com/biya-coin/sdk-go/chain/exchange/types"
 )
 
 func NewMarketOrderForLiquidation(

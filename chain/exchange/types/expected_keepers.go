@@ -13,9 +13,9 @@ import (
 
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
 
-	insurancetypes "github.com/InjectiveLabs/sdk-go/chain/insurance/types"
-	oracletypes "github.com/InjectiveLabs/sdk-go/chain/oracle/types"
-	wasmxtypes "github.com/InjectiveLabs/sdk-go/chain/wasmx/types"
+	insurancetypes "github.com/biya-coin/sdk-go/chain/insurance/types"
+	oracletypes "github.com/biya-coin/sdk-go/chain/oracle/types"
+	wasmxtypes "github.com/biya-coin/sdk-go/chain/wasmx/types"
 )
 
 // BankKeeper defines the expected bank keeper methods.

@@ -7,9 +7,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/InjectiveLabs/sdk-go/client/common"
-	"github.com/InjectiveLabs/sdk-go/client/explorer"
-	explorerPB "github.com/InjectiveLabs/sdk-go/exchange/explorer_rpc/pb"
+	"github.com/biya-coin/sdk-go/client/common"
+	"github.com/biya-coin/sdk-go/client/explorer"
+	explorerPB "github.com/biya-coin/sdk-go/exchange/explorer_rpc/pb"
 )
 
 func main() {

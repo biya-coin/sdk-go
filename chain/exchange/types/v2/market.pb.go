@@ -6,7 +6,7 @@ package v2
 import (
 	cosmossdk_io_math "cosmossdk.io/math"
 	fmt "fmt"
-	types "github.com/InjectiveLabs/sdk-go/chain/oracle/types"
+	types "github.com/biya-coin/sdk-go/chain/oracle/types"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"

@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 
-	"github.com/InjectiveLabs/sdk-go/chain/crypto/ethsecp256k1"
+	"github.com/biya-coin/sdk-go/chain/crypto/ethsecp256k1"
 )
 
 var amino *codec.LegacyAmino

@@ -15,10 +15,10 @@ import (
 	cosmtypes "github.com/cosmos/cosmos-sdk/types"
 	"github.com/pkg/errors"
 
-	crypto_cdc "github.com/InjectiveLabs/sdk-go/chain/crypto/codec"
-	"github.com/InjectiveLabs/sdk-go/chain/crypto/ethsecp256k1"
-	"github.com/InjectiveLabs/sdk-go/chain/crypto/hd"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	crypto_cdc "github.com/biya-coin/sdk-go/chain/crypto/codec"
+	"github.com/biya-coin/sdk-go/chain/crypto/ethsecp256k1"
+	"github.com/biya-coin/sdk-go/chain/crypto/hd"
+	"github.com/biya-coin/sdk-go/client/common"
 )
 
 const defaultKeyringKeyName = "validator"

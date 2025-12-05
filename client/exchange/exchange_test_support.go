@@ -4,16 +4,16 @@ import (
 	"context"
 	"errors"
 
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	"github.com/biya-coin/sdk-go/client/common"
 
-	accountPB "github.com/InjectiveLabs/sdk-go/exchange/accounts_rpc/pb"
-	auctionPB "github.com/InjectiveLabs/sdk-go/exchange/auction_rpc/pb"
-	derivativeExchangePB "github.com/InjectiveLabs/sdk-go/exchange/derivative_exchange_rpc/pb"
-	insurancePB "github.com/InjectiveLabs/sdk-go/exchange/insurance_rpc/pb"
-	metaPB "github.com/InjectiveLabs/sdk-go/exchange/meta_rpc/pb"
-	oraclePB "github.com/InjectiveLabs/sdk-go/exchange/oracle_rpc/pb"
-	portfolioExchangePB "github.com/InjectiveLabs/sdk-go/exchange/portfolio_rpc/pb"
-	spotExchangePB "github.com/InjectiveLabs/sdk-go/exchange/spot_exchange_rpc/pb"
+	accountPB "github.com/biya-coin/sdk-go/exchange/accounts_rpc/pb"
+	auctionPB "github.com/biya-coin/sdk-go/exchange/auction_rpc/pb"
+	derivativeExchangePB "github.com/biya-coin/sdk-go/exchange/derivative_exchange_rpc/pb"
+	insurancePB "github.com/biya-coin/sdk-go/exchange/insurance_rpc/pb"
+	metaPB "github.com/biya-coin/sdk-go/exchange/meta_rpc/pb"
+	oraclePB "github.com/biya-coin/sdk-go/exchange/oracle_rpc/pb"
+	portfolioExchangePB "github.com/biya-coin/sdk-go/exchange/portfolio_rpc/pb"
+	spotExchangePB "github.com/biya-coin/sdk-go/exchange/spot_exchange_rpc/pb"
 	"google.golang.org/grpc"
 )
 

@@ -12,10 +12,10 @@ import (
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 	"github.com/shopspring/decimal"
 
-	exchangev2types "github.com/InjectiveLabs/sdk-go/chain/exchange/types/v2"
-	"github.com/InjectiveLabs/sdk-go/client"
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	exchangev2types "github.com/biya-coin/sdk-go/chain/exchange/types/v2"
+	"github.com/biya-coin/sdk-go/client"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
+	"github.com/biya-coin/sdk-go/client/common"
 )
 
 func StoreTxToFile(fileName string, txBytes []byte) error {

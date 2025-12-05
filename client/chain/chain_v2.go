@@ -40,15 +40,15 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	erc20types "github.com/InjectiveLabs/sdk-go/chain/erc20/types"
-	evmtypes "github.com/InjectiveLabs/sdk-go/chain/evm/types"
-	exchangev2types "github.com/InjectiveLabs/sdk-go/chain/exchange/types/v2"
-	permissionstypes "github.com/InjectiveLabs/sdk-go/chain/permissions/types"
-	chainstreamv2types "github.com/InjectiveLabs/sdk-go/chain/stream/types/v2"
-	tokenfactorytypes "github.com/InjectiveLabs/sdk-go/chain/tokenfactory/types"
-	txfeestypes "github.com/InjectiveLabs/sdk-go/chain/txfees/types"
-	"github.com/InjectiveLabs/sdk-go/client"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	erc20types "github.com/biya-coin/sdk-go/chain/erc20/types"
+	evmtypes "github.com/biya-coin/sdk-go/chain/evm/types"
+	exchangev2types "github.com/biya-coin/sdk-go/chain/exchange/types/v2"
+	permissionstypes "github.com/biya-coin/sdk-go/chain/permissions/types"
+	chainstreamv2types "github.com/biya-coin/sdk-go/chain/stream/types/v2"
+	tokenfactorytypes "github.com/biya-coin/sdk-go/chain/tokenfactory/types"
+	txfeestypes "github.com/biya-coin/sdk-go/chain/txfees/types"
+	"github.com/biya-coin/sdk-go/client"
+	"github.com/biya-coin/sdk-go/client/common"
 )
 
 type ChainClientV2 interface {

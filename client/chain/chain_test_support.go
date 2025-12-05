@@ -24,16 +24,16 @@ import (
 	ethcommon "github.com/ethereum/go-ethereum/common"
 	"google.golang.org/grpc"
 
-	erc20types "github.com/InjectiveLabs/sdk-go/chain/erc20/types"
-	evmtypes "github.com/InjectiveLabs/sdk-go/chain/evm/types"
-	exchangetypes "github.com/InjectiveLabs/sdk-go/chain/exchange/types"
-	exchangev2types "github.com/InjectiveLabs/sdk-go/chain/exchange/types/v2"
-	permissionstypes "github.com/InjectiveLabs/sdk-go/chain/permissions/types"
-	chainstreamv2types "github.com/InjectiveLabs/sdk-go/chain/stream/types/v2"
-	tokenfactorytypes "github.com/InjectiveLabs/sdk-go/chain/tokenfactory/types"
-	txfeestypes "github.com/InjectiveLabs/sdk-go/chain/txfees/types"
-	injectiveclient "github.com/InjectiveLabs/sdk-go/client"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	erc20types "github.com/biya-coin/sdk-go/chain/erc20/types"
+	evmtypes "github.com/biya-coin/sdk-go/chain/evm/types"
+	exchangetypes "github.com/biya-coin/sdk-go/chain/exchange/types"
+	exchangev2types "github.com/biya-coin/sdk-go/chain/exchange/types/v2"
+	permissionstypes "github.com/biya-coin/sdk-go/chain/permissions/types"
+	chainstreamv2types "github.com/biya-coin/sdk-go/chain/stream/types/v2"
+	tokenfactorytypes "github.com/biya-coin/sdk-go/chain/tokenfactory/types"
+	txfeestypes "github.com/biya-coin/sdk-go/chain/txfees/types"
+	injectiveclient "github.com/biya-coin/sdk-go/client"
+	"github.com/biya-coin/sdk-go/client/common"
 )
 
 var _ ChainClientV2 = &MockChainClientV2{}

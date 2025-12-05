@@ -1,7 +1,7 @@
 package common
 
 import (
-	ctypes "github.com/InjectiveLabs/sdk-go/chain/types"
+	ctypes "github.com/biya-coin/sdk-go/chain/types"
 	log "github.com/InjectiveLabs/suplog"
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"

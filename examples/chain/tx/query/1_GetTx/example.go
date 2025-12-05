@@ -6,12 +6,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/InjectiveLabs/sdk-go/client"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	"github.com/biya-coin/sdk-go/client"
+	"github.com/biya-coin/sdk-go/client/common"
 
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
 )
 
 func main() {

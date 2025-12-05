@@ -9,9 +9,9 @@ import (
 
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 
-	wasmxtypes "github.com/InjectiveLabs/sdk-go/chain/wasmx/types"
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	wasmxtypes "github.com/biya-coin/sdk-go/chain/wasmx/types"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
+	"github.com/biya-coin/sdk-go/client/common"
 )
 
 func main() {

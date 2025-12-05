@@ -16,10 +16,10 @@ import (
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 	ethsecp256k1 "github.com/ethereum/go-ethereum/crypto/secp256k1"
 
-	injcodectypes "github.com/InjectiveLabs/sdk-go/chain/codec/types"
-	secp256k1 "github.com/InjectiveLabs/sdk-go/chain/crypto/ethsecp256k1"
-	chaintypes "github.com/InjectiveLabs/sdk-go/chain/types"
-	"github.com/InjectiveLabs/sdk-go/typeddata"
+	injcodectypes "github.com/biya-coin/sdk-go/chain/codec/types"
+	secp256k1 "github.com/biya-coin/sdk-go/chain/crypto/ethsecp256k1"
+	chaintypes "github.com/biya-coin/sdk-go/chain/types"
+	"github.com/biya-coin/sdk-go/typeddata"
 )
 
 var (

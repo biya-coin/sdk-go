@@ -7,8 +7,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	oracletypes "github.com/InjectiveLabs/sdk-go/chain/oracle/types"
-	peggytypes "github.com/InjectiveLabs/sdk-go/chain/peggy/types"
+	oracletypes "github.com/biya-coin/sdk-go/chain/oracle/types"
+	peggytypes "github.com/biya-coin/sdk-go/chain/peggy/types"
 )
 
 var BinaryOptionsMarketRefundFlagPrice = math.LegacyNewDec(-1)

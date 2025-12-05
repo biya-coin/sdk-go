@@ -8,8 +8,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/InjectiveLabs/sdk-go/client/common"
-	explorerpb "github.com/InjectiveLabs/sdk-go/exchange/explorer_rpc/pb"
+	"github.com/biya-coin/sdk-go/client/common"
+	explorerpb "github.com/biya-coin/sdk-go/exchange/explorer_rpc/pb"
 )
 
 type ExplorerClient interface {
