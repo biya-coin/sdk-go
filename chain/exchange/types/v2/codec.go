@@ -67,6 +67,14 @@ func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 	cdc.RegisterConcrete(&MsgUpdateParams{}, "exchange/v2/MsgUpdateParams", nil)
 	cdc.RegisterConcrete(&MsgUpdateSpotMarket{}, "exchange/v2/MsgUpdateSpotMarket", nil)
 	cdc.RegisterConcrete(&MsgUpdateDerivativeMarket{}, "exchange/v2/MsgUpdateDerivativeMarket", nil)
+	// Spot leverage messages
+	cdc.RegisterConcrete(&MsgEnableSpotLeverage{}, "exchange/v2/MsgEnableSpotLeverage", nil)
+	cdc.RegisterConcrete(&MsgDisableSpotLeverage{}, "exchange/v2/MsgDisableSpotLeverage", nil)
+	cdc.RegisterConcrete(&MsgSupplyToLendingPool{}, "exchange/v2/MsgSupplyToLendingPool", nil)
+	cdc.RegisterConcrete(&MsgWithdrawFromLendingPool{}, "exchange/v2/MsgWithdrawFromLendingPool", nil)
+	cdc.RegisterConcrete(&MsgCreateSpotLeverageLimitOrder{}, "exchange/v2/MsgCreateSpotLeverageLimitOrder", nil)
+	cdc.RegisterConcrete(&MsgCreateSpotLeverageMarketOrder{}, "exchange/v2/MsgCreateSpotLeverageMarketOrder", nil)
+	cdc.RegisterConcrete(&MsgCancelSpotLeverageOrder{}, "exchange/v2/MsgCancelSpotLeverageOrder", nil)
 
 	cdc.RegisterConcrete(&ExchangeEnableProposal{}, "exchange/v2/ExchangeEnableProposal", nil)
 	cdc.RegisterConcrete(&BatchExchangeModificationProposal{}, "exchange/v2/BatchExchangeModificationProposal", nil)
@@ -144,6 +152,14 @@ func RegisterInterfaces(registry types.InterfaceRegistry) {
 		&MsgUpdateParams{},
 		&MsgUpdateSpotMarket{},
 		&MsgUpdateDerivativeMarket{},
+		// Spot leverage messages
+		&MsgEnableSpotLeverage{},
+		&MsgDisableSpotLeverage{},
+		&MsgSupplyToLendingPool{},
+		&MsgWithdrawFromLendingPool{},
+		&MsgCreateSpotLeverageLimitOrder{},
+		&MsgCreateSpotLeverageMarketOrder{},
+		&MsgCancelSpotLeverageOrder{},
 	)
 
 	registry.RegisterImplementations(
