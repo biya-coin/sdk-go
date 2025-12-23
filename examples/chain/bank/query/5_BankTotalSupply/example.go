@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/biya-sdk/sdk-go/client"
+	"github.com/biya-coin/sdk-go/client"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	chainclient "github.com/biya-sdk/sdk-go/client/chain"
-	"github.com/biya-sdk/sdk-go/client/common"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
+	"github.com/biya-coin/sdk-go/client/common"
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 
 	"os"

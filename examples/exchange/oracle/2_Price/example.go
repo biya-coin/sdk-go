@@ -8,11 +8,11 @@ import (
 
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 
-	"github.com/biya-sdk/sdk-go/client"
-	chainclient "github.com/biya-sdk/sdk-go/client/chain"
-	"github.com/biya-sdk/sdk-go/client/common"
-	"github.com/biya-sdk/sdk-go/client/core"
-	exchangeclient "github.com/biya-sdk/sdk-go/client/exchange"
+	"github.com/biya-coin/sdk-go/client"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
+	"github.com/biya-coin/sdk-go/client/common"
+	"github.com/biya-coin/sdk-go/client/core"
+	exchangeclient "github.com/biya-coin/sdk-go/client/exchange"
 )
 
 func main() {

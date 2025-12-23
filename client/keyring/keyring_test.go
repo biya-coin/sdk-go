@@ -12,10 +12,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	crypto_cdc "github.com/biya-sdk/sdk-go/chain/crypto/codec"
-	"github.com/biya-sdk/sdk-go/chain/crypto/hd"
-	ctypes "github.com/biya-sdk/sdk-go/chain/types"
-	"github.com/biya-sdk/sdk-go/client/chain"
+	crypto_cdc "github.com/biya-coin/sdk-go/chain/crypto/codec"
+	"github.com/biya-coin/sdk-go/chain/crypto/hd"
+	ctypes "github.com/biya-coin/sdk-go/chain/types"
+	"github.com/biya-coin/sdk-go/client/chain"
 )
 
 const KeyringAppName = "keyring_test"

@@ -11,7 +11,7 @@ import (
 	math_bits "math/bits"
 
 	cosmossdk_io_math "cosmossdk.io/math"
-	types "github.com/biya-sdk/sdk-go/chain/oracle/types"
+	types "github.com/biya-coin/sdk-go/chain/oracle/types"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	grpc1 "github.com/cosmos/gogoproto/grpc"
 	proto "github.com/cosmos/gogoproto/proto"

@@ -8,7 +8,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/cosmos/cosmos-sdk/x/authz"
 
-	"github.com/biya-sdk/sdk-go/chain/exchange/types"
+	"github.com/biya-coin/sdk-go/chain/exchange/types"
 )
 
 var (

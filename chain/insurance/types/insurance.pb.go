@@ -11,7 +11,7 @@ import (
 	time "time"
 
 	cosmossdk_io_math "cosmossdk.io/math"
-	types "github.com/biya-sdk/sdk-go/chain/oracle/types"
+	types "github.com/biya-coin/sdk-go/chain/oracle/types"
 	types1 "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/cosmos/cosmos-sdk/types/tx/amino"
 	_ "github.com/cosmos/gogoproto/gogoproto"

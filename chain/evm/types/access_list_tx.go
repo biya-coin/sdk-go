@@ -10,7 +10,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/biya-sdk/sdk-go/chain/types"
+	"github.com/biya-coin/sdk-go/chain/types"
 )
 
 func NewAccessListTx(tx *ethtypes.Transaction) (*AccessListTx, error) {

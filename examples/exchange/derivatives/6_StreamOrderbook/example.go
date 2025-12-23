@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/biya-sdk/sdk-go/client/common"
-	exchangeclient "github.com/biya-sdk/sdk-go/client/exchange"
+	"github.com/biya-coin/sdk-go/client/common"
+	exchangeclient "github.com/biya-coin/sdk-go/client/exchange"
 )
 
 func main() {

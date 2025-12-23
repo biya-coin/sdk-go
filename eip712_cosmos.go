@@ -18,7 +18,7 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/protoadapt"
 
-	"github.com/biya-sdk/sdk-go/typeddata"
+	"github.com/biya-coin/sdk-go/typeddata"
 )
 
 type EIP712Wrapper func(

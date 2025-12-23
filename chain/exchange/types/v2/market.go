@@ -4,7 +4,7 @@ import (
 	"cosmossdk.io/math"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/biya-sdk/sdk-go/chain/exchange/types"
+	"github.com/biya-coin/sdk-go/chain/exchange/types"
 )
 
 var BinaryOptionsMarketRefundFlagPrice = math.LegacyNewDec(-1)

@@ -151,8 +151,8 @@ copy-chain-types: clone-injective-core
 		cp injective-core/injective-chain/types/util.go chain/types && \
 		cp injective-core/injective-chain/types/validation.go chain/types
 
-	@find ./chain -type f -name "*.go" -exec sed -i "" -e "s|github.com/InjectiveLabs/injective-core/injective-chain/modules|github.com/biya-sdk/sdk-go/chain|g" {} \;
-	@find ./chain -type f -name "*.go" -exec sed -i "" -e "s|github.com/InjectiveLabs/injective-core/injective-chain|github.com/biya-sdk/sdk-go/chain|g" {} \;
+	@find ./chain -type f -name "*.go" -exec sed -i "" -e "s|github.com/InjectiveLabs/injective-core/injective-chain/modules|github.com/biya-coin/sdk-go/chain|g" {} \;
+	@find ./chain -type f -name "*.go" -exec sed -i "" -e "s|github.com/InjectiveLabs/injective-core/injective-chain|github.com/biya-coin/sdk-go/chain|g" {} \;
 
 	mkdir -p chain/evm/precompiles/bank && mkdir -p chain/evm/precompiles/exchange && mkdir -p chain/evm/precompiles/staking && \
 		cp injective-core/injective-chain/modules/evm/precompiles/bindings/cosmos/precompile/bank/*.go chain/evm/precompiles/bank && \

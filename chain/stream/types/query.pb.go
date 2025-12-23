@@ -11,7 +11,7 @@ import (
 	math_bits "math/bits"
 
 	cosmossdk_io_math "cosmossdk.io/math"
-	types "github.com/biya-sdk/sdk-go/chain/exchange/types"
+	types "github.com/biya-coin/sdk-go/chain/exchange/types"
 	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
 	types1 "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/cosmos/gogoproto/gogoproto"

@@ -7,9 +7,9 @@ import (
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/biya-sdk/sdk-go/chain/types"
-	chainclient "github.com/biya-sdk/sdk-go/client/chain"
-	"github.com/biya-sdk/sdk-go/client/common"
+	"github.com/biya-coin/sdk-go/chain/types"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
+	"github.com/biya-coin/sdk-go/client/common"
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 )
 

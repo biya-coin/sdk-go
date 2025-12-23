@@ -1,4 +1,4 @@
-module github.com/biya-sdk/sdk-go
+module github.com/biya-coin/sdk-go
 
 go 1.23.9
 

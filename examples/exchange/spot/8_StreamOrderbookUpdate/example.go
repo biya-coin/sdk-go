@@ -7,9 +7,9 @@ import (
 	"os"
 	"sort"
 
-	"github.com/biya-sdk/sdk-go/client/common"
-	exchangeclient "github.com/biya-sdk/sdk-go/client/exchange"
-	spotExchangePB "github.com/biya-sdk/sdk-go/exchange/spot_exchange_rpc/pb"
+	"github.com/biya-coin/sdk-go/client/common"
+	exchangeclient "github.com/biya-coin/sdk-go/client/exchange"
+	spotExchangePB "github.com/biya-coin/sdk-go/exchange/spot_exchange_rpc/pb"
 	"github.com/shopspring/decimal"
 )
 

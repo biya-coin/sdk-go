@@ -7,8 +7,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/biya-sdk/sdk-go/client/common"
-	"github.com/biya-sdk/sdk-go/client/explorer"
+	"github.com/biya-coin/sdk-go/client/common"
+	"github.com/biya-coin/sdk-go/client/explorer"
 )
 
 func main() {

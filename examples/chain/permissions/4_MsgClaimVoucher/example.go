@@ -10,9 +10,9 @@ import (
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 
-	permissionstypes "github.com/biya-sdk/sdk-go/chain/permissions/types"
-	chainclient "github.com/biya-sdk/sdk-go/client/chain"
-	"github.com/biya-sdk/sdk-go/client/common"
+	permissionstypes "github.com/biya-coin/sdk-go/chain/permissions/types"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
+	"github.com/biya-coin/sdk-go/client/common"
 )
 
 func main() {

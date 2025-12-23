@@ -11,7 +11,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 
-	"github.com/biya-sdk/sdk-go/chain/crypto/ethsecp256k1"
+	"github.com/biya-coin/sdk-go/chain/crypto/ethsecp256k1"
 )
 
 const (

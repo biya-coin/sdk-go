@@ -10,9 +10,9 @@ import (
 	cosmtypes "github.com/cosmos/cosmos-sdk/types"
 	eth "github.com/ethereum/go-ethereum/common"
 
-	"github.com/biya-sdk/sdk-go/client"
-	"github.com/biya-sdk/sdk-go/client/chain"
-	"github.com/biya-sdk/sdk-go/client/common"
+	"github.com/biya-coin/sdk-go/client"
+	"github.com/biya-coin/sdk-go/client/chain"
+	"github.com/biya-coin/sdk-go/client/common"
 )
 
 var (

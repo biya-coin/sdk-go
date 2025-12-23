@@ -5,7 +5,7 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/biya-sdk/sdk-go/chain/exchange/types"
+	"github.com/biya-coin/sdk-go/chain/exchange/types"
 )
 
 func (t OrderType) IsBuy() bool {

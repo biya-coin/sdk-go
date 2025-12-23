@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	explorerPB "github.com/biya-sdk/sdk-go/exchange/explorer_rpc/pb"
+	explorerPB "github.com/biya-coin/sdk-go/exchange/explorer_rpc/pb"
 
-	"github.com/biya-sdk/sdk-go/client/common"
-	explorerclient "github.com/biya-sdk/sdk-go/client/explorer"
+	"github.com/biya-coin/sdk-go/client/common"
+	explorerclient "github.com/biya-coin/sdk-go/client/explorer"
 )
 
 func main() {

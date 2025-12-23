@@ -7,7 +7,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	chaintypes "github.com/biya-sdk/sdk-go/chain/types"
+	chaintypes "github.com/biya-coin/sdk-go/chain/types"
 )
 
 // NewTransactionLogs creates a new NewTransactionLogs instance.

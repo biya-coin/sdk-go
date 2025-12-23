@@ -13,10 +13,10 @@ import (
 
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
 
-	downtimetypes "github.com/biya-sdk/sdk-go/chain/downtime-detector/types"
-	insurancetypes "github.com/biya-sdk/sdk-go/chain/insurance/types"
-	oracletypes "github.com/biya-sdk/sdk-go/chain/oracle/types"
-	wasmxtypes "github.com/biya-sdk/sdk-go/chain/wasmx/types"
+	downtimetypes "github.com/biya-coin/sdk-go/chain/downtime-detector/types"
+	insurancetypes "github.com/biya-coin/sdk-go/chain/insurance/types"
+	oracletypes "github.com/biya-coin/sdk-go/chain/oracle/types"
+	wasmxtypes "github.com/biya-coin/sdk-go/chain/wasmx/types"
 )
 
 // BankKeeper defines the expected bank keeper methods.

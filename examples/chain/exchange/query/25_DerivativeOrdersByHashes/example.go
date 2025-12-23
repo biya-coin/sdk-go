@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/biya-sdk/sdk-go/client"
-	chainclient "github.com/biya-sdk/sdk-go/client/chain"
-	"github.com/biya-sdk/sdk-go/client/common"
+	"github.com/biya-coin/sdk-go/client"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
+	"github.com/biya-coin/sdk-go/client/common"
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 )
 

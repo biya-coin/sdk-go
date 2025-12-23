@@ -4,9 +4,9 @@ import (
 	"cosmossdk.io/math"
 	"github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	exchangev1types "github.com/biya-sdk/sdk-go/chain/exchange/types"
-	exchangev2types "github.com/biya-sdk/sdk-go/chain/exchange/types/v2"
-	oracletypes "github.com/biya-sdk/sdk-go/chain/oracle/types"
+	exchangev1types "github.com/biya-coin/sdk-go/chain/exchange/types"
+	exchangev2types "github.com/biya-coin/sdk-go/chain/exchange/types/v2"
+	oracletypes "github.com/biya-coin/sdk-go/chain/oracle/types"
 )
 
 func createSmartDenomMetadata() types.Metadata {

@@ -10,7 +10,7 @@ import (
 	math "math"
 	math_bits "math/bits"
 
-	types "github.com/biya-sdk/sdk-go/chain/oracle/types"
+	types "github.com/biya-coin/sdk-go/chain/oracle/types"
 	_ "github.com/cosmos/cosmos-proto"
 	types1 "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/cosmos/cosmos-sdk/types/msgservice"

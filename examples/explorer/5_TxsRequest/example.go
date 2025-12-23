@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/biya-sdk/sdk-go/client/common"
-	explorerclient "github.com/biya-sdk/sdk-go/client/explorer"
-	explorerPB "github.com/biya-sdk/sdk-go/exchange/explorer_rpc/pb"
+	"github.com/biya-coin/sdk-go/client/common"
+	explorerclient "github.com/biya-coin/sdk-go/client/explorer"
+	explorerPB "github.com/biya-coin/sdk-go/exchange/explorer_rpc/pb"
 )
 
 func main() {

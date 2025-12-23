@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"cosmossdk.io/math"
-	"github.com/biya-sdk/sdk-go/client/common"
+	"github.com/biya-coin/sdk-go/client/common"
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 	sdktypes "github.com/cosmos/cosmos-sdk/types"
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 
-	exchangev2types "github.com/biya-sdk/sdk-go/chain/exchange/types/v2"
-	chainclient "github.com/biya-sdk/sdk-go/client/chain"
+	exchangev2types "github.com/biya-coin/sdk-go/chain/exchange/types/v2"
+	chainclient "github.com/biya-coin/sdk-go/client/chain"
 )
 
 func main() {
