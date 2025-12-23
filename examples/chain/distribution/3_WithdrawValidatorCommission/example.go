@@ -10,8 +10,8 @@ import (
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 	"github.com/cosmos/cosmos-sdk/x/distribution/types"
 
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	chainclient "github.com/biya-sdk/sdk-go/client/chain"
+	"github.com/biya-sdk/sdk-go/client/common"
 )
 
 func main() {

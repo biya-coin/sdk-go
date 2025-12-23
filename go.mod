@@ -1,4 +1,4 @@
-module github.com/InjectiveLabs/sdk-go
+module github.com/biya-sdk/sdk-go
 
 go 1.23.9
 

@@ -27,7 +27,7 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/pkg/errors"
 
-	"github.com/InjectiveLabs/sdk-go/chain/types"
+	"github.com/biya-sdk/sdk-go/chain/types"
 )
 
 type SigFormat struct {

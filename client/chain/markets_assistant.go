@@ -7,7 +7,7 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/shopspring/decimal"
 
-	"github.com/InjectiveLabs/sdk-go/client/core"
+	"github.com/biya-sdk/sdk-go/client/core"
 )
 
 type TokenMetadata interface {

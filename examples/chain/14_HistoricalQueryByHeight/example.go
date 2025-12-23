@@ -13,11 +13,11 @@ import (
 
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 
-	"github.com/InjectiveLabs/sdk-go/chain/exchange/types"
-	"github.com/InjectiveLabs/sdk-go/client"
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
-	"github.com/InjectiveLabs/sdk-go/client/common"
-	tmclient "github.com/InjectiveLabs/sdk-go/client/tm"
+	"github.com/biya-sdk/sdk-go/chain/exchange/types"
+	"github.com/biya-sdk/sdk-go/client"
+	chainclient "github.com/biya-sdk/sdk-go/client/chain"
+	"github.com/biya-sdk/sdk-go/client/common"
+	tmclient "github.com/biya-sdk/sdk-go/client/tm"
 )
 
 func main() {

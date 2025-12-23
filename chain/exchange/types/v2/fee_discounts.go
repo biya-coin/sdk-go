@@ -3,7 +3,7 @@ package v2
 import (
 	"cosmossdk.io/math"
 
-	"github.com/InjectiveLabs/sdk-go/chain/exchange/types"
+	"github.com/biya-sdk/sdk-go/chain/exchange/types"
 )
 
 func (s *FeeDiscountSchedule) CalculateFeeDiscountTier(

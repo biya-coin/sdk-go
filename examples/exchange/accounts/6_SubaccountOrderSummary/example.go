@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/InjectiveLabs/sdk-go/client/common"
-	exchangeclient "github.com/InjectiveLabs/sdk-go/client/exchange"
-	accountPB "github.com/InjectiveLabs/sdk-go/exchange/accounts_rpc/pb"
+	"github.com/biya-sdk/sdk-go/client/common"
+	exchangeclient "github.com/biya-sdk/sdk-go/client/exchange"
+	accountPB "github.com/biya-sdk/sdk-go/exchange/accounts_rpc/pb"
 )
 
 func main() {

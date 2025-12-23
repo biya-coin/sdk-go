@@ -8,8 +8,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	downtimetypes "github.com/InjectiveLabs/sdk-go/chain/downtime-detector/types"
-	"github.com/InjectiveLabs/sdk-go/chain/exchange/types"
+	downtimetypes "github.com/biya-sdk/sdk-go/chain/downtime-detector/types"
+	"github.com/biya-sdk/sdk-go/chain/exchange/types"
 )
 
 var _ paramtypes.ParamSet = &Params{}

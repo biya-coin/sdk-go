@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/InjectiveLabs/sdk-go/client/common"
-	exchangeclient "github.com/InjectiveLabs/sdk-go/client/exchange"
-	derivativeExchangePB "github.com/InjectiveLabs/sdk-go/exchange/derivative_exchange_rpc/pb"
+	"github.com/biya-sdk/sdk-go/client/common"
+	exchangeclient "github.com/biya-sdk/sdk-go/client/exchange"
+	derivativeExchangePB "github.com/biya-sdk/sdk-go/exchange/derivative_exchange_rpc/pb"
 	"github.com/shopspring/decimal"
 )
 

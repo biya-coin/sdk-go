@@ -7,12 +7,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	"github.com/biya-sdk/sdk-go/client/common"
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 
-	permissionstypes "github.com/InjectiveLabs/sdk-go/chain/permissions/types"
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
+	permissionstypes "github.com/biya-sdk/sdk-go/chain/permissions/types"
+	chainclient "github.com/biya-sdk/sdk-go/client/chain"
 )
 
 func main() {

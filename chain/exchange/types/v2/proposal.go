@@ -11,8 +11,8 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/InjectiveLabs/sdk-go/chain/exchange/types"
-	oracletypes "github.com/InjectiveLabs/sdk-go/chain/oracle/types"
+	"github.com/biya-sdk/sdk-go/chain/exchange/types"
+	oracletypes "github.com/biya-sdk/sdk-go/chain/oracle/types"
 )
 
 // constants

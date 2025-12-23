@@ -10,9 +10,9 @@ import (
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 
-	oracletypes "github.com/InjectiveLabs/sdk-go/chain/oracle/types"
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	oracletypes "github.com/biya-sdk/sdk-go/chain/oracle/types"
+	chainclient "github.com/biya-sdk/sdk-go/client/chain"
+	"github.com/biya-sdk/sdk-go/client/common"
 )
 
 func main() {

@@ -10,9 +10,9 @@ import (
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	tokenfactorytypes "github.com/InjectiveLabs/sdk-go/chain/tokenfactory/types"
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	tokenfactorytypes "github.com/biya-sdk/sdk-go/chain/tokenfactory/types"
+	chainclient "github.com/biya-sdk/sdk-go/client/chain"
+	"github.com/biya-sdk/sdk-go/client/common"
 )
 
 func main() {

@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"cosmossdk.io/math"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	"github.com/biya-sdk/sdk-go/client/common"
 	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
 	sdktypes "github.com/cosmos/cosmos-sdk/types"
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 
-	peggytypes "github.com/InjectiveLabs/sdk-go/chain/peggy/types"
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
+	peggytypes "github.com/biya-sdk/sdk-go/chain/peggy/types"
+	chainclient "github.com/biya-sdk/sdk-go/client/chain"
 )
 
 func main() {

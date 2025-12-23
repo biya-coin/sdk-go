@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	chainstreamv2 "github.com/InjectiveLabs/sdk-go/chain/stream/types/v2"
-	"github.com/InjectiveLabs/sdk-go/client"
-	chainclient "github.com/InjectiveLabs/sdk-go/client/chain"
-	"github.com/InjectiveLabs/sdk-go/client/common"
+	chainstreamv2 "github.com/biya-sdk/sdk-go/chain/stream/types/v2"
+	"github.com/biya-sdk/sdk-go/client"
+	chainclient "github.com/biya-sdk/sdk-go/client/chain"
+	"github.com/biya-sdk/sdk-go/client/common"
 )
 
 func main() {

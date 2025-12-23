@@ -12,10 +12,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	exchangev1types "github.com/InjectiveLabs/sdk-go/chain/exchange/types"
-	exchangev2types "github.com/InjectiveLabs/sdk-go/chain/exchange/types/v2"
-	"github.com/InjectiveLabs/sdk-go/client/common"
-	"github.com/InjectiveLabs/sdk-go/client/core"
+	exchangev1types "github.com/biya-sdk/sdk-go/chain/exchange/types"
+	exchangev2types "github.com/biya-sdk/sdk-go/chain/exchange/types/v2"
+	"github.com/biya-sdk/sdk-go/client/common"
+	"github.com/biya-sdk/sdk-go/client/core"
 )
 
 func TestMarketAssistantCreation(t *testing.T) {

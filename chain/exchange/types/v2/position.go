@@ -3,8 +3,8 @@ package v2
 import (
 	"cosmossdk.io/math"
 
-	"github.com/InjectiveLabs/sdk-go/chain/exchange/types"
-	v1 "github.com/InjectiveLabs/sdk-go/chain/exchange/types"
+	"github.com/biya-sdk/sdk-go/chain/exchange/types"
+	v1 "github.com/biya-sdk/sdk-go/chain/exchange/types"
 )
 
 func (p *DerivativePosition) Copy() *DerivativePosition {

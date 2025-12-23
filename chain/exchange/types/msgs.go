@@ -10,9 +10,9 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/ethereum/go-ethereum/common"
 
-	oracletypes "github.com/InjectiveLabs/sdk-go/chain/oracle/types"
-	wasmxtypes "github.com/InjectiveLabs/sdk-go/chain/wasmx/types"
-	chaintypes "github.com/InjectiveLabs/sdk-go/chain/types"
+	oracletypes "github.com/biya-sdk/sdk-go/chain/oracle/types"
+	chaintypes "github.com/biya-sdk/sdk-go/chain/types"
+	wasmxtypes "github.com/biya-sdk/sdk-go/chain/wasmx/types"
 )
 
 const RouterKey = ModuleName
