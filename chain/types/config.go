@@ -6,8 +6,9 @@ import (
 )
 
 const (
-	// InjectiveBech32Prefix defines the Bech32 prefix used for EthAccounts on the Injective Chain
-	InjectiveBech32Prefix = "inj"
+	// InjectiveBech32Prefix defines the Bech32 prefix used for EthAccounts on the Biya Chain.
+	// Renamed from "inj" to "byb" for the biya-coin fork; constant name kept for API compatibility.
+	InjectiveBech32Prefix = "byb"
 
 	// Bech32PrefixAccAddr defines the Bech32 prefix of an account's address
 	Bech32PrefixAccAddr = InjectiveBech32Prefix
