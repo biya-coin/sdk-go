@@ -27,6 +27,7 @@ const (
 	chainID      = "biyachain-1"
 	privateKey   = "88CBEAD91AEE890D27BF06E003ADE3D4E952427E88F88D31D61D3EF5E5D54305"
 	marketID     = "0xb322bce686ec25364be50728812e33741da1d82e9c91c2c89b91b91d26b0e9c5" // BYB/USDT
+
 )
 
 // sendToMempool 通过 Unix socket 发送交易到 monad-node 的 mempool
@@ -69,19 +70,34 @@ func queryAccountInfo(clientCtx client.Context, grpcConn *grpc.ClientConn, addre
 }
 
 func main() {
-	if len(os.Args) < 3 {
-		fmt.Println("用法: go run example.go <价格> <数量>")
-		fmt.Println("示例: go run example.go 0.001 1")
+	if len(os.Args) < 4 {
+		fmt.Println("用法: go run example.go <方向> <数量> <最差可接受价格>")
+		fmt.Println("  方向: buy 或 sell")
+		fmt.Println("  最差可接受价格: 买单填价格上限，卖单填价格下限（滑点保护）")
+		fmt.Println("示例: go run example.go buy 1.5 0.002   （买入1.5个，最高接受0.002）")
+		fmt.Println("示例: go run example.go sell 1.5 0.0008 （卖出1.5个，最低接受0.0008）")
 		return
 	}
-	price, err := sdkmath.LegacyNewDecFromStr(os.Args[1])
-	if err != nil {
-		fmt.Printf("价格格式错误: %v\n", err)
+
+	side := os.Args[1]
+	if side != "buy" && side != "sell" {
+		fmt.Println("方向必须为 buy 或 sell")
 		return
 	}
+
 	quantity, err := sdkmath.LegacyNewDecFromStr(os.Args[2])
 	if err != nil {
 		fmt.Printf("数量格式错误: %v\n", err)
+		return
+	}
+
+	worstPrice, err := sdkmath.LegacyNewDecFromStr(os.Args[3])
+	if err != nil {
+		fmt.Printf("最差价格格式错误: %v\n", err)
+		return
+	}
+	if worstPrice.IsNegative() || worstPrice.IsZero() {
+		fmt.Println("最差可接受价格必须大于 0")
 		return
 	}
 
@@ -108,23 +124,35 @@ func main() {
 	fmt.Printf("发送方地址: %s\n", bybAddress)
 	fmt.Printf("账户信息: accountNumber=%d, sequence=%d, balance=%s byb\n", accNum, seq, bal)
 
-	orderId := fmt.Sprintf("buy_%d", time.Now().UnixNano())
+	orderId := fmt.Sprintf("market_%s_%d", side, time.Now().UnixNano())
 
-	msg := &exchangev2types.MsgCreateSpotLimitOrder{
+	// worstPrice 为最差可接受价格（滑点保护）：
+	//   买单 → 成交价不超过此值
+	//   卖单 → 成交价不低于此值
+	var orderType exchangev2types.OrderType
+	if side == "buy" {
+		orderType = exchangev2types.OrderType_BUY
+	} else {
+		orderType = exchangev2types.OrderType_SELL
+	}
+
+	fmt.Printf("\n下市价%s单: market=%s..., worstPrice=%s, quantity=%s, cid=%s\n",
+		side, marketID[:10], worstPrice, quantity, orderId)
+
+	msg := &exchangev2types.MsgCreateSpotMarketOrder{
 		Sender: bybAddress,
 		Order: exchangev2types.SpotOrder{
 			MarketId:  marketID,
-			OrderType: exchangev2types.OrderType_BUY,
+			OrderType: orderType,
 			OrderInfo: exchangev2types.OrderInfo{
 				SubaccountId: "",
 				FeeRecipient: bybAddress,
-				Price:        price,
+				Price:        worstPrice,
 				Quantity:     quantity,
 				Cid:          orderId,
 			},
 		},
 	}
-	fmt.Printf("下买单: market=%s, price=%s, quantity=%s, cid=%s\n", marketID[:10]+"...", price, quantity, orderId)
 
 	txFactory := tx.Factory{}.
 		WithChainID(chainID).
@@ -155,13 +183,13 @@ func main() {
 		fmt.Printf("❌ 发送失败: %v\n", err)
 		return
 	}
-	fmt.Printf("✓ 买单已发送到 mempool\n")
+	fmt.Printf("✓ 市价%s单已发送到 mempool\n", side)
 
 	// 等待上链
 	fmt.Println("等待交易确认...")
 	time.Sleep(3 * time.Second)
 
-	// 查询订单
+	// 查询挂单（市价单成交后不会出现在挂单列表中）
 	exchangeClient := exchangev2types.NewQueryClient(grpcConn)
 	res, err := exchangeClient.AccountAddressSpotOrders(context.Background(), &exchangev2types.QueryAccountAddressSpotOrdersRequest{
 		MarketId:       marketID,
@@ -172,17 +200,22 @@ func main() {
 		return
 	}
 
-	fmt.Printf("\n查询结果: 共 %d 个挂单\n", len(res.Orders))
+	fmt.Printf("\n查询结果: 共 %d 个挂单（市价单成交后不在列表中）\n", len(res.Orders))
+	found := false
 	for i, order := range res.Orders {
-		side := "SELL"
+		orderSide := "SELL"
 		if order.IsBuy {
-			side = "BUY"
+			orderSide = "BUY"
 		}
 		mark := " "
 		if order.Cid == orderId {
 			mark = "★"
+			found = true
 		}
 		fmt.Printf("%s[%d] %s price=%s quantity=%s fillable=%s cid=%s\n",
-			mark, i+1, side, order.Price, order.Quantity, order.Fillable, order.Cid)
+			mark, i+1, orderSide, order.Price, order.Quantity, order.Fillable, order.Cid)
+	}
+	if !found {
+		fmt.Printf("★ 市价%s单 %s 未在挂单列表中 → 已立即成交\n", side, orderId)
 	}
 }
